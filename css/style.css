@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-weight: normal;
+  color: #fff;
+  background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 50px;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  padding: 40px 110px 40px 80px;
+  z-index: 10;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav a {
+  font-size: 16px;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 71px;
+}
+
+.header__logo {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.header__button {
+  margin-left: 553px;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  font-size: 16px;
+}
+
+.main-display {
+  padding-top: 270px;
+}
+
+.main-display .container {
+  position: relative;
+  z-index: 10;
+}
+
+.main-display__header {
+  font-size: 64px;
+  font-weight: 700;
+  max-width: 750px;
+  margin-bottom: 50px;
+}
+
+.main-display__timer {
+  display: flex;
+  margin-bottom: 76px;
+}
+
+.main-display__button {
+  font-size: 16px;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.main-display__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.timer__item {
+  width: 102px;
+  height: 112px;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.timer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.timer__count {
+  font-size: 36px;
+}
+
+.timer__text {
+  font-size: 16px;
+  opacity: 0.4;
+}
